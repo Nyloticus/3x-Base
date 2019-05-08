@@ -1,0 +1,445 @@
+*,html,body
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    
+    height: 112px;
+    line-height: 112px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.secondary
+{
+    background-color: #211a23;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.5s ease-in;
+}
+ul
+{
+    list-style: none;
+    
+}
+ul li
+{
+    display: inline-block;
+}
+header nav
+{
+    float: right;
+}
+.logo img
+{
+   
+}
+header nav ul li a
+{
+    margin-left: 80px;
+    padding-right: 30px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+header nav ul li a:hover
+{
+    text-decoration: none;
+    color: red;
+}
+header nav ul li button
+{
+    color: white;
+    background: none;
+    border: none;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+}
+header nav ul li button:hover
+{
+    text-decoration: none;
+    color: red;
+}
+.title-x img
+{
+
+    width: 100%;
+    height: 100%;
+    margin-top: 112px;
+    background-size: cover;
+    max-width:100%;
+    max-height:100%;
+    
+}
+.ultra-nav
+{
+    
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 500px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.5s ease-in;
+}
+.ulta-nav ul
+{
+    list-style: none;
+}
+.ultra-nav ul li button
+{
+    border: none;
+    background: none;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 3px;
+    height: 3px;
+    outline: none;
+}
+.ultra-nav ul li button:hover :active
+{
+    border: none;
+    outline: none;
+}
+.style-define
+{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.style-define button
+{
+    padding: 10px;
+    border-style: none;
+    padding-left: 20px;
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #338033;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.6s;
+    overflow: hidden;
+}
+.style-define button:focus
+{
+    outline: none;
+    
+}
+.style-define button:before
+{
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    filter: blur(30px);
+    
+   
+}
+.style-define button:after
+{
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    opacity: 0;
+    filter: blur(30px);
+    
+    
+}
+.style-define button:hover
+{
+    background: #338033;
+    cursor: pointer;
+}
+.style-define button:hover:before
+{
+    opacity: 0.6;
+    transition: 0.7s;
+}
+.style-define button:hover:after
+{
+    opacity: 0.6;
+    transition: 0.7s;
+}
+.style-define .define-style2
+{
+    margin-left: 30px;
+}
+.style-define .SearchBtn 
+{
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    background: none;
+    border: none;
+    color: gray;
+}
+.style-define .Selecting
+{
+    position: absolute;
+    margin-left: 400px;
+    bottom: 1px;
+    border: none;
+    -moz-appearance:none;
+    text-indent: 1px;
+    text-overflow: '';
+    border: 1px solid blue;
+    text-align: center;
+    transition: 0.6s;
+    overflow: hidden;
+    border-radius: 4px;
+    font-family: Destra Italic;
+    padding: 10px;
+}
+.style-define .Selecting:hover
+{
+    background: blue;
+    cursor: pointer;
+}
+.style-define .Selecting2
+{
+    position: absolute;
+    margin-left: 600px;
+    bottom: 1px;
+    border: none;
+    -moz-appearance:none;
+    text-indent: 1px;
+    text-overflow: '';
+    border: 1px solid blue;
+    text-align: center;
+    transition: 0.6s;
+    overflow: hidden;
+    border-radius: 4px;
+    font-family: Destra Italic;
+    padding: 10px;
+}
+.Style-popup
+{
+    display: none;
+}
+.Style-popup .InnerStyle-popup .container {
+  
+  /*display: none;*/
+    display: block;
+  position: fixed;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.Style-popup .InnerStyle-popup .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.Style-popup .InnerStyle-popup .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.Style-popup .InnerStyle-popup .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.Style-popup .InnerStyle-popup .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.Style-popup .InnerStyle-popup .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.Style-popup .InnerStyle-popup .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.Style-popup .InnerStyle-popup .container .checkmark:after {
+  left: 9.5px;
+  top: 6.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.shop-item
+{
+    margin: 30px;
+}
+.shop-item-title
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+}
+.shop-item-image
+{
+    height: 250px;
+}
+.shop-item-details
+{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shop-item-price
+{
+    flex-grow: 1; /* push other elements to the end of the container*/
+    color: #333;
+}
+.shop-items
+{
+    display: flex;
+    flex-wrap: wrap; /* to go to nl when it's on the edge */
+    justify-content: space-around; /*space around evey element in the container*/
+}
+.cart-header
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-column
+{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row
+{
+    display: flex;
+}
+.cart-item
+{
+    width: 45%;
+}
+.cart-price
+{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-quantity
+{
+    width: 35%;
+}
+.cart-item-title
+{
+    color: #333;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+}
+.cart-item-image
+{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.btn-danger
+{
+    color: #fff;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+.btn-danger:hover
+{
+  background-color: #CC4C4C;
+}
+.cart-quantity-input
+{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56ccf2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-row:last-child
+{
+    border-bottom: 1px solid black;
+        
+}
+.cart-row:last-child .cart-column
+{
+    border: none;
+}
+.cart-total
+{
+    text-align: end;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+.cart-total-title
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price
+{
+    color: #333;
+    font-size: 1.1em;
+}
+.purchasebtn
+{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    position: relative;
+    left: 500px;
+}
+.product-content-header
+{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    font-family: timesnewroman;
+    font-weight: bold;
+    color: crimson;
+    text-decoration: underline;
+}
